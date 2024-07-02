@@ -2,35 +2,36 @@ import React from 'react'
 
 import thumb01 from "../assets/img/face.jpg";
 
+const siteText = [
+	{
+		title: "parallax effect",
+		view: "https://choi-youtube.netlify.app/",
+		img: thumb01,
+		info: [
+			"script project",
+			"parallax effect",
+		]
+	},
+	{
+		title: "mouse effect",
+		view: "https://choi-youtube.netlify.app/",
+		info: [
+			"script project",
+			"mouse effect",
+		]
+	},
+	{
+		title: "gsap scroll effect",
+		view: "https://choi-youtube.netlify.app/",
+		info: [
+			"script project",
+			"gsap scroll effect",
+		]
+	},
+]
+
+
 const Site = () => {
-
-	const siteText = [
-		{
-			title: "parallax effect",
-			view: "https://choi-youtube.netlify.app/",
-			info: [
-				"script project",
-				"parallax effect",
-			]
-		},
-		{
-			title: "mouse effect",
-			view: "https://choi-youtube.netlify.app/",
-			info: [
-				"script project",
-				"mouse effect",
-			]
-		},
-		{
-			title: "gsap scroll effect",
-			view: "https://choi-youtube.netlify.app/",
-			info: [
-				"script project",
-				"gsap scroll effect",
-			]
-		},
-	]
-
 
     return (
 		<section id="site">
@@ -45,7 +46,7 @@ const Site = () => {
 							
 								<div className="script">
 									<div className="img">
-										<img src={thumb01} alt="" />
+										<img src={site.img} alt="" />
 									</div>
 
 									<h3 className="title">{site.title}</h3>
