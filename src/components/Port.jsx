@@ -3,7 +3,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import port01 from "../assets/img/port01.jpg";
-import port02 from "../assets/img/port02.jpg";
 import port03 from "../assets/img/port03.jpg";
 import port04 from "../assets/img/port04.jpg";
 import port05 from "../assets/img/port05.jpg";
@@ -24,15 +23,6 @@ const portText = [
 	},
 	{
 		num:"02",
-		title: "chois 유튜브 사이트",
-		desc: "리액트를 이용한 사이트 제작",
-		img: port02,
-		code: "",
-		view: "https://choi-youtube.netlify.app/",
-		name: "chois 유튜브 사이트",
-	},
-	{
-		num:"03",
 		title: "espoir 사이트",
 		desc: "웹 표준을 준수한 사이트 제작",
 		img: port03,
@@ -41,7 +31,7 @@ const portText = [
 		name: "espoir 사이트",
 	},
 	{
-		num:"04",
+		num:"03",
 		title: "남도주류 사이트",
 		desc: "웹 표준을 준수한 사이트 제작",
 		img: port04,
@@ -50,7 +40,7 @@ const portText = [
 		name: "남도주류 사이트",
 	},
 	{
-		num:"05",
+		num:"04",
 		title: "지음커뮤지케이션 사이트",
 		desc: "웹 표준을 준수한 사이트 제작",
 		img: port05,
@@ -59,7 +49,7 @@ const portText = [
 		name: "지음커뮤니케이션 사이트",
 	},
 	{
-		num:"06",
+		num:"05",
 		title: "설화수 사이트",
 		desc: "웹 표준을 준수한 사이트 제작",
 		img: port06,
@@ -68,7 +58,7 @@ const portText = [
 		name: "설화수 사이트",
 	},
 	{
-		num:"07",
+		num:"06",
 		title: "원효로떡볶이 사이트",
 		desc: "웹 표준을 준수한 사이트 제작",
 		img: port07,
@@ -77,7 +67,7 @@ const portText = [
 		name: "원효로떡볶이 사이트",
 	},
 	{
-		num:"08",
+		num:"07",
 		title: "예약시스템 메인페이지",
 		desc: "웹 표준을 준수한 사이트 제작",
 		img: port08,
@@ -86,7 +76,7 @@ const portText = [
 		name: "예약시스템 메인페이지",
 	},
 	{
-		num:"09",
+		num:"08",
 		title: "미카코카레 사이트",
 		desc: "웹 표준을 준수한 사이트 제작",
 		img: port09,

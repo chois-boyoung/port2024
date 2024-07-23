@@ -10,11 +10,11 @@ const headerNav = [
 		url: "#skill"
 	},
 	{
-		title: "site",
+		title: "script",
 		url: "#site"
 	},
 	{
-		title: "port",
+		title: "site",
 		url: "#port"
 	},
 	{
