@@ -2,101 +2,23 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import port01 from "../assets/img/port01.jpg";
-import port03 from "../assets/img/port03.jpg";
-import port04 from "../assets/img/port04.jpg";
-import port05 from "../assets/img/port05.jpg";
-import port06 from "../assets/img/port06.jpg";
-import port07 from "../assets/img/port07.jpg";
-import port08 from "../assets/img/port08.jpg";
-import port09 from "../assets/img/port09.jpg";
-
-const portText = [
-	{
-		num:"01",
-		title: "지유가오카 사이트",
-		desc: "웹 표준을 준수한 사이트 제작",
-		img: port01,
-		code: "",
-		view: "https://boyoung9605.cafe24.com/portfolio/jiyugaoka/",
-		name: "지유가오카 사이트",
-	},
-	{
-		num:"02",
-		title: "espoir 사이트",
-		desc: "웹 표준을 준수한 사이트 제작",
-		img: port03,
-		code: "",
-		view: "https://boyoung9605.cafe24.com/portfolio/espoir/",
-		name: "espoir 사이트",
-	},
-	{
-		num:"03",
-		title: "남도주류 사이트",
-		desc: "웹 표준을 준수한 사이트 제작",
-		img: port04,
-		code: "",
-		view: "https://boyoung9605.cafe24.com/portfolio/namdo/",
-		name: "남도주류 사이트",
-	},
-	{
-		num:"04",
-		title: "지음커뮤지케이션 사이트",
-		desc: "웹 표준을 준수한 사이트 제작",
-		img: port05,
-		code: "",
-		view: "https://boyoung9605.cafe24.com/portfolio/onepage/",
-		name: "지음커뮤니케이션 사이트",
-	},
-	{
-		num:"05",
-		title: "설화수 사이트",
-		desc: "웹 표준을 준수한 사이트 제작",
-		img: port06,
-		code: "",
-		view: "https://boyoung9605.cafe24.com/portfolio/sulwhasoo/",
-		name: "설화수 사이트",
-	},
-	{
-		num:"06",
-		title: "원효로떡볶이 사이트",
-		desc: "웹 표준을 준수한 사이트 제작",
-		img: port07,
-		code: "",
-		view: "https://boyoung9605.cafe24.com/portfolio/rice/",
-		name: "원효로떡볶이 사이트",
-	},
-	{
-		num:"07",
-		title: "예약시스템 메인페이지",
-		desc: "웹 표준을 준수한 사이트 제작",
-		img: port08,
-		code: "",
-		view: "https://boyoung9605.cafe24.com/portfolio/reserve/",
-		name: "예약시스템 메인페이지",
-	},
-	{
-		num:"08",
-		title: "미카코카레 사이트",
-		desc: "웹 표준을 준수한 사이트 제작",
-		img: port09,
-		code: "",
-		view: "https://boyoung9605.cafe24.com/portfolio/curry/",
-		name: "미카코카레 사이트",
-	},
-]
+import { portText } from '../\bcontents';
 
 const Port = () => {
 
 	const horizontalRef = useRef(null);
     const sectionRef = useRef([]);
+	//Ref = this 와 같은 역할, 변수
+	//null = 0
+	//article 값이 여러 개이기 때문에 [];
+
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
         const horizontal = horizontalRef.current;
         const sections = sectionRef.current;
-
+		
         let scrollTween = gsap.to(sections, {
             xPercent: -120 * (sections.length - 1),
             ease: "none",
@@ -109,8 +31,8 @@ const Port = () => {
                 markers: false,
                 invalidateOnRefresh: true,
                 anticipatePin: 1,
-            }
-        })
+            },
+        });
 
 			return () => {
 				scrollTween.kill();

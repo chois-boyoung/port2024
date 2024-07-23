@@ -1,13 +1,8 @@
 import React from 'react';
-
+import { introText } from '../contents';
 import about from "../assets/img/face.jpg";
 
 const Intro = () => {
-	const introText = {
-		title: "port developer",
-	};
-
-
 	return (
 		<section id="intro">
 			<div className="intro__inner">

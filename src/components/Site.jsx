@@ -1,37 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const siteText = [
-	{
-		title: "gsap parallax",
-		view: "https://chois-boyoung.github.io/gsap/gsap01.html",
-		code: "https://github.com/chois-boyoung/gsap",
-		text: "GSAP을 이용한 PALLARAX EFFECT",
-		info: [
-			"script project",
-			"parallax effect",
-		]
-	},
-	{
-		title: "mouse effect",
-		view: "https://chois-boyoung.github.io/mouseEffect/mouse01.html",
-		code: "https://github.com/chois-boyoung/mouseEffect",
-		text: "jQuery를 사용하여 만든 다양한 마우스 효과 스크립트",
-		info: [
-			"script project",
-			"mouse effect",
-		]
-	},
-	{
-		title: "youtube api site",
-		view: "https://choi-youtube.netlify.app/",
-		code: "https://github.com/chois-boyoung/webs-youtube",
-		text: "react와 youtube api를 사용하여 만든 asmr 추천 영상 페이지",
-		info: [
-			"script project",
-			"youtube api site",
-		]
-	},
-]
+import { siteText } from '../\bcontents';
 
 
 const Site = () => {

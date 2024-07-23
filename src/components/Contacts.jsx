@@ -1,11 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { contactText } from '../\bcontents';
 
-const contactText = [
-	{
-		link:"mailto:boyoung9605@naver.com",
-		title:"mail : BOYOUNG9605@NAVER.COM"
-	}
-]
 
 const Contacts = () => {
 

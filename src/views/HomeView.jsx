@@ -11,20 +11,21 @@ import Main from '../components/Main'
 
 
 const HomeView = () => {
-  return (
-    <div>
-        <Skip />
-        <Header />
-        <Main>
-            <Intro />
-            <Skill />
-            <Site />
-            <Port />
-            <Contacts />
-        </Main>
-        <Footer />
-    </div>
-  )
+	
+	return (
+		<div>
+			<Skip />
+			<Header />
+			<Main>
+				<Intro />
+				<Skill />
+				<Site />
+				<Port />
+				<Contacts />
+			</Main>
+			<Footer />
+		</div>
+	)
 }
 
 export default HomeView
